@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BTH7.Cau_2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        .mane{
+            color:#0000ff;
+            background-color:#ffc0cb;
+            text-align:center;
+            font-weight:bold;
+        }
+        .sinhvien{
+            border:solid green;
+            margin-left:10px;
+            margin-right:20px;
+        }
+        .sinhvien p {
+            color:#0000ff;
+            text-align:center;
+        }
+        .sinhvien img{
+            text-align:center;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <p class="mane">Lớp 56K1 Ngành CNTT</p>
+    <form id="form1" runat="server">
+         
+        <div style="margin:auto;width:90%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+          
+            </div>
+    </form>
+    <div style="clear:both"></div>
+    <p class="mane"> Viện Kỹ Thuật và Công Nghệ - Trường Đại học Vinh</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BTH7.Site1" %>
+
+<%@ Register Src="~/Control/ucMenu.ascx" TagPrefix="uc1" TagName="ucMenu" %>
+<%@ Register Src="~/Control/ucLeft.ascx" TagPrefix="uc1" TagName="ucLeft" %>
+<%@ Register Src="~/Control/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <uc1:ucMenu runat="server" />
+        <div>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width:10%"><uc1:ucLeft runat="server" id="ucLeft1" /></td>
+                    <td> <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>                
+                </tr>
+            </table>
+            
+            
+        </div>
+        <div style="clear:both"></div>
+    </form>
+    <uc1:ucFooter runat="server" id="ucFooter" />
+</body>
+</html>
